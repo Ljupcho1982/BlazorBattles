@@ -1,0 +1,17 @@
+﻿@page "/build"
+@inject BlazorApp1.Client.Services.IBananaService BananaService
+
+
+<button @onclick="()=>eatBananas(10)">Eat Bananas
+
+
+</button>
+@code {
+
+    private void eatBananas(int amount){
+
+        BananaService.EatBananas(amount);
+
+    }
+
+}

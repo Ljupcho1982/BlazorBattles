@@ -3,6 +3,14 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+@media(min-width:100px) {
+
+    .top-menu {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+}
 
 h1:focus {
     outline: none;
@@ -34,6 +42,9 @@ a, .btn-link {
     color: red;
 }
 
+
+
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -62,3 +73,5 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+   
